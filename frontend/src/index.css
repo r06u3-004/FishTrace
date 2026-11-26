@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ft-bg: #0b0f14;
+  --ft-surface: #151b23;
+  --ft-surface-2: #1c2430;
+  --ft-accent: #55d6a0;
+  --ft-text: #f0f4f5;
+  --ft-text-muted: #96a3af;
+  --ft-border: #27313d;
+  --ft-critical: #7f3038;
+  --ft-high: #a65a33;
+  --ft-medium: #b39a45;
+  --ft-low: #5a7186;
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--ft-bg);
+  color: var(--ft-text);
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-technical {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-variant-ligatures: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background-color: rgba(85, 214, 160, 0.22);
+}
